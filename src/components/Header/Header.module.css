@@ -1,0 +1,26 @@
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #77a7de;
+    position: sticky;
+    top: 0;
+}
+.header__nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: #ffffff;
+}
+.header__nav_item {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.header__nav_item:first-child {
+    padding-left: 0;
+}
+.header__nav_item:hover {
+    color: #000000;
+}

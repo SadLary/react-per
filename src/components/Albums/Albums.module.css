@@ -1,0 +1,22 @@
+.list_item{
+    border:1px solid #dddddd;
+    width: 260px;
+    padding: 10px;
+    padding-right: 0;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.name {
+    padding-right: 10px;
+}
+@keyframes fade{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
