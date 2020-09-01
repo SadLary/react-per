@@ -1,0 +1,26 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popUp {
+    position: absolute;
+    animation: fade 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.popUp_close {
+    cursor: pointer;
+}
+@keyframes fade{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

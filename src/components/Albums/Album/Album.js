@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import Photo from '../../Photo/Photo/Photo'
 import s from './Album.module.css'
 
 
@@ -22,7 +23,7 @@ const Album = () => {
             <div className={`container ${s.list}`}>
                 {albumPhotos? albumPhotos.map(albumPhoto=>{
                     return(
-                        <img key={albumPhoto.id} src={albumPhoto.url} alt="pic" className={s.img}/>
+                        <Photo key={albumPhoto.id} url={albumPhoto.url}/>
                     )
                 }): null}
             </div>

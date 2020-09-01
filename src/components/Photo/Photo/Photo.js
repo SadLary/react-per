@@ -12,7 +12,7 @@ const Photo = ({url})=>{
     return (
         <div>
             <img src={url} className={s.image} alt="pic" onClick={handlePopUp}/>
-            <PopUp visible={visible} url={url}/>  
+            <PopUp visible={visible} url={url} toggle={handlePopUp}/>  
         </div>
     )
 }

@@ -1,23 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import s from './PopUp.module.css'
 
 
 
 
-const PopUp = ({visible, url}) => {
+const PopUp = ({visible, url, toggle}) => {
 
    
     if(!visible) return null
-    
-    function closeModal(){
-        console.log('click');
-        return !visible
-    }
+
     return (
-        <div className={s.PopUp}>
-            <span onClick={closeModal}>Закрыть</span>
-            <img src={url} alt="pic"/>
-        </div>
+        <div className={s.wrapper}>
+            <div className={s.popUp}>
+                <span className={s.popUp_close} onClick={toggle}>Закрыть</span>
+                <img src={url} alt="pic"/>
+            </div>
+        </div>    
     )
 }
 export default PopUp

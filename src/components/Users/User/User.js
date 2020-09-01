@@ -17,7 +17,6 @@ const User = () => {
         getAlbums()
         // eslint-disable-next-line
     },[])
-    console.log(albums);
     return(
         <div className='container-fluid flex-center'>
             <div className='container'>
